@@ -1,0 +1,4 @@
+.idea/
+.mobile-app/platforms/ios/
+.mobile-app/platforms/android/
+.mobile-app/node_modules/

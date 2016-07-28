@@ -1,0 +1,27 @@
+{
+  "generator-m-ionic": {
+    "answers": {
+      "appName": "PokemonGo-Bot",
+      "appId": "com.pokemongof.pokemongobot",
+      "ionicCss": false,
+      "bowerPackages": [
+        "angular-dynamic-locale#~0.1.27",
+        "angular-translate#~2.11.0",
+        "angular-translate-loader-static-files#~2.11.0",
+        "localforage#~1.4.0"
+      ],
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "plugins": [
+        "cordova-plugin-device",
+        "cordova-plugin-inappbrowser",
+        "cordova-plugin-splashscreen",
+        "cordova-plugin-statusbar"
+      ],
+      "appModule": "pokemongoBot",
+      "ecosystems": []
+    }
+  }
+}
