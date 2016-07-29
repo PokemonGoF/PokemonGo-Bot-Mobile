@@ -15,8 +15,7 @@
     "lodash": "^4.14.0",
     "angular-websocket": "^2.0.0",
     "ion-md-input": "^1.0.4",
-    "ionic-material": "^0.4.2",
-    "ion-google-place": "^0.0.1"
+    "ionic-material": "^0.4.2"
   },
   "devDependencies": {
     "angular-mocks": "~1.5.0"

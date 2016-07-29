@@ -36,7 +36,16 @@
           <!--Login-->
         <!--</ion-item>-->
         <ion-item menu-close ui-sref="main.map">
-          Map
+          <div class="item-icon-right">
+            <i class="icon ion-map"></i>
+            Map
+          </div>
+        </ion-item>
+        <ion-item menu-close show-when-state="main.map" ui-sref="main.login">
+          <div class="item-icon-right">
+            <i class="icon ion-log-out"></i>
+            Logout
+          </div>
         </ion-item>
     </ion-content>
 
