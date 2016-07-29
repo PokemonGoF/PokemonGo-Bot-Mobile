@@ -14,7 +14,7 @@ This project uses Ionic for programming the mobile app. The Ionic project files 
 The backend architecture is currently undecided. However, a simple proof-of-concept for a Python websocket server can be found in `PokemonGo-Bot-Mobile/backend`.
 
 ## Testing on iOS/Android
-The skeleton code for this project was generated with [generator-m-ionic](https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/guides/development_intro.md). [See their development reference] for the list of the `gulp` commands to build & emulate/run the code on iOS and Android devices.
+The skeleton code for this project was generated with [generator-m-ionic](https://github.com/mwaylabs/generator-m-ionic/). [See their development reference](https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/guides/development_intro.md) for the list of the `gulp` commands to build & emulate/run the code on iOS and Android devices.
 
 ## Development
 
