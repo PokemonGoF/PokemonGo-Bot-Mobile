@@ -2,6 +2,8 @@
 
 The cross-platform (iOS, Android) mobile app for PokemonGo-Bot is a work in progress!
 
+[Imgur](http://i.imgur.com/wHYgnVQ.png)
+
 ## Installation
 Checkout this repository, then `cd` to it.
 - `cd PokemonGo-Bot-Mobile/mobile-app`
