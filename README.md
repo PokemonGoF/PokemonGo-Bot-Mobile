@@ -4,10 +4,10 @@ The cross-platform (iOS, Android) mobile app for PokemonGo-Bot is a work in prog
 
 ## Installation
 Checkout this repository, then `cd` to it.
-`cd PokemonGo-Bot-Mobile/mobile-app`
-`npm install`
-`bower install`
-`gulp` to build and preview app in a web browser
+- `cd PokemonGo-Bot-Mobile/mobile-app`
+- `npm install`
+- `bower install`
+- `gulp` to build and preview app in a web browser
 
 This project uses Ionic for programming the mobile app. The Ionic project files can be found in `PokemonGo-Bot-Mobile/mobile-app`.
 
