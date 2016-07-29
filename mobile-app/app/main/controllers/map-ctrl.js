@@ -1,7 +1,19 @@
 'use strict';
-angular.module('main').controller('MapCtrl', function ($log, $scope, $ionicLoading, $compile) {
+angular.module('main').controller('MapCtrl', function ($log, $scope, $ionicHistory) {
 
-  function addLocationMarker(latLng) {
+  // var path = $location.path();
+  // $scope.options = $scope.options || {};
+  // if (path.indexOf('submit') != -1) {
+  //   $scope.options.hideBackButton = true;
+  // } else {
+  //   $scope.options.hideBackButton = false;
+  // }
+
+  $ionicHistory.nextViewOptions({
+    disableBack: true
+  });
+
+  function addLocationMarker (latLng) {
     var marker = new google.maps.Marker({
       position: latLng,
       map: $scope.map,
@@ -15,7 +27,7 @@ angular.module('main').controller('MapCtrl', function ($log, $scope, $ionicLoadi
 
 
   // Source: https://jsfiddle.net/ogsvzacz/6/
-  function addLocationButton()
+  function addLocationButton ()
   {
     var controlDiv = document.createElement('div');
     var firstChild = document.createElement('button');
@@ -48,13 +60,13 @@ angular.module('main').controller('MapCtrl', function ($log, $scope, $ionicLoadi
 
     firstChild.addEventListener('click', function () {
       var imgX = '0',
-        animationInterval = setInterval(function () {
+        animationInterval = setInterval( function () {
           imgX = imgX === '-18' ? '0' : '-18';
-          secondChild.style['background-position'] = imgX+'px 0';
+          secondChild.style['background-position'] = imgX + 'px 0';
         }, 500);
 
-      if(navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition( function (position) {
           var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
           addLocationMarker(latLng);
           $scope.map.setCenter(latLng);

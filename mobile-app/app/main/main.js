@@ -1,10 +1,11 @@
 'use strict';
 angular.module('main', [
   'ionic',
+  'ionic-material',
   'ngCordova',
   'ui.router',
   'ngWebSocket',
-  'LocalStorageModule'
+  'LocalStorageModule',
 ])
 .factory('WebSocket', function ($websocket) {
   // Open a WebSocket connection
@@ -40,12 +41,12 @@ angular.module('main', [
         templateUrl: 'main/templates/menu.html',
         controller: 'MenuCtrl as menu'
       })
-      .state('main.home', {
-        url: '/home',
+      .state('main.login', {
+        url: '/login',
         views: {
           'pageContent': {
-            templateUrl: 'main/templates/home.html',
-            controller: 'HomeCtrl'
+            templateUrl: 'main/templates/login.html',
+            controller: 'LoginCtrl'
           }
         }
       })
@@ -67,48 +68,12 @@ angular.module('main', [
           }
         }
       })
-      .state('main.login', {
-        url: '/login',
-        views: {
-          'pageContent': {
-            templateUrl: 'main/templates/login.html',
-            controller: 'LoginCtrl'
-          }
-        }
-      })
       .state('main.map', {
         url: '/map',
         views: {
           'pageContent': {
             templateUrl: 'main/templates/map.html',
             controller: 'MapCtrl'
-          }
-        }
-      })
-      .state('main.list', {
-        url: '/list',
-        views: {
-          'pageContent': {
-            templateUrl: 'main/templates/list.html',
-            // controller: '<someCtrl> as ctrl'
-          }
-        }
-      })
-      .state('main.listDetail', {
-        url: '/list/detail',
-        views: {
-          'pageContent': {
-            templateUrl: 'main/templates/list-detail.html',
-            // controller: '<someCtrl> as ctrl'
-          }
-        }
-      })
-      .state('main.debug', {
-        url: '/debug',
-        views: {
-          'pageContent': {
-            templateUrl: 'main/templates/debug.html',
-            controller: 'DebugCtrl as ctrl'
           }
         }
       });

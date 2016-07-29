@@ -14,6 +14,9 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel='stylesheet' href='bower_components/waves/dist/waves.min.css' />
+    <link rel='stylesheet' href='bower_components/ionic-material/dist/ionic.material.css' />
+    <link rel='stylesheet' href='bower_components/ionic-material/dist/ionic.material.min.css' />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -23,15 +26,19 @@
     <!-- endinject -->
     <!-- endbuild -->
 
+    <!-- Roboto Font-->
+    <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.24/gmaps.js"></script>
     <script src="https://cdn.klokantech.com/maptilerlayer/v1/index.js"></script>
   </head>
+
   <body ng-app="pokemongoBot" ng-controller="MainCtrl">
     <!-- Google Maps API keys -->
     <!-- ****** DEVELOPMENT API KEY ONLY FOR USE ON HTTP://LOCALHOST, NOT ON A MOBILE DEVICE ****** -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCchxDOmyVxZxng-C1inFVL9zVeWK9SKFk"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCchxDOmyVxZxng-C1inFVL9zVeWK9SKFk&libraries=places&sensor=true"
             type="text/javascript"></script>
     <!-- the nav bar will be updated as we navigate between views -->
     <!-- <ion-nav-bar> can be removed when using sidemenu (contained in menu.html) -->
@@ -61,6 +68,11 @@
     <script src="bower_components/angular-http-auth/src/http-auth-interceptor.js"></script>
     <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/angular-websocket/dist/angular-websocket.js"></script>
+    <script src="bower_components/ion-md-input/ion-md-input.js"></script>
+    <script src="bower_components/waves/dist/waves.min.js"></script>
+    <script src="bower_components/ionic-material/dist/ionic.material.js"></script>
+    <script src="bower_components/ionic-material/dist/ionic.material.min.js"></script>
+    <script src="bower_components/ion-google-place/ion-google-place.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -73,9 +85,7 @@
     <script src="main/controllers/map-ctrl.js"></script>
     <script src="main/controllers/main-ctrl.js"></script>
     <script src="main/controllers/login-ctrl.js"></script>
-    <script src="main/controllers/home-ctrl.js"></script>
     <script src="main/controllers/google-auth-ctrl.js"></script>
-    <script src="main/controllers/debug-ctrl.js"></script>
     <script src="main/constants/config-const.js"></script>
     <script src="app.js"></script>
     <!-- endinject -->

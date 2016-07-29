@@ -1,6 +1,14 @@
 'use strict';
 angular.module('main')
-.controller('PtcAuthCtrl', function ($log, $scope, $state, WebSocket) {
+.controller('PtcAuthCtrl', function ($log, $scope, $state, WebSocket, $ionicHistory, $ionicConfig) {
+
+  $ionicHistory.nextViewOptions({
+    disableBack: true
+  });
+
+  $ionicConfig.backButton.previousTitleText(false);
+  $ionicConfig.backButton.icon('ion-chevron-left');
+  $ionicConfig.backButton.text('');
 
   $log.log('Hello from your Controller: PtcAuthCtrl in module main:. This is your controller:', this);
 
